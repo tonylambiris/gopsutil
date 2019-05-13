@@ -47,12 +47,14 @@ const (
 	FUSE_SUPER_MAGIC      = 0x65735546
 	FUTEXFS_SUPER_MAGIC   = 0xBAD1DEA
 	HFS_SUPER_MAGIC       = 0x4244
+	HFSPLUS_SUPER_MAGIC   = 0x482b
 	HOSTFS_SUPER_MAGIC    = 0x00c0ffee
 	HPFS_SUPER_MAGIC      = 0xF995E849
 	HUGETLBFS_MAGIC       = 0x958458f6
 	ISOFS_SUPER_MAGIC     = 0x9660
 	JFFS2_SUPER_MAGIC     = 0x72b6
 	JFS_SUPER_MAGIC       = 0x3153464a
+	LVM_SUPER_MAGIC       = 0x4D48
 	MINIX_SUPER_MAGIC     = 0x137F /* orig. minix */
 	MINIX_SUPER_MAGIC2    = 0x138F /* 30 char minix */
 	MINIX2_SUPER_MAGIC    = 0x2468 /* minix V2 */
@@ -156,6 +158,7 @@ var fsTypeMap = map[int64]string{
 	GFS_SUPER_MAGIC:             "gfs/gfs2",            /* 0x1161970 remote */
 	GPFS_SUPER_MAGIC:            "gpfs",                /* 0x47504653 remote */
 	HFS_SUPER_MAGIC:             "hfs",                 /* 0x4244 local */
+	HFSPLUS_SUPER_MAGIC:         "hfsplus",             /* 0x482b local */
 	HPFS_SUPER_MAGIC:            "hpfs",                /* 0xF995E849 local */
 	HUGETLBFS_MAGIC:             "hugetlbfs",           /* 0x958458F6 local */
 	MTD_INODE_FS_SUPER_MAGIC:    "inodefs",             /* 0x11307854 local */
@@ -168,6 +171,7 @@ var fsTypeMap = map[int64]string{
 	JFS_SUPER_MAGIC:             "jfs",                 /* 0x3153464A local */
 	KAFS_SUPER_MAGIC:            "k-afs",               /* 0x6B414653 remote */
 	LUSTRE_SUPER_MAGIC:          "lustre",              /* 0x0BD00BD0 remote */
+	LVM_SUPER_MAGIC:             "lvm",                 /* 0x4D48 local */
 	MINIX_SUPER_MAGIC:           "minix",               /* 0x137F local */
 	MINIX_SUPER_MAGIC2:          "minix (30 char.)",    /* 0x138F local */
 	MINIX2_SUPER_MAGIC:          "minix v2",            /* 0x2468 local */
